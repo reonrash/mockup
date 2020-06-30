@@ -1,0 +1,163 @@
+nav {
+    background-color: #F8F3E3;
+    padding: 5px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: rgb(87, 73, 28);
+    text-decoration: none;
+    display: block;
+    font-family: 'Heebo';
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: rgb(87, 73, 28);
+    transition: all .3s ease-in-out;
+
+
+}
+
+ul li:nth-child(n+2) a {
+    color: rgba(87, 73, 28, .6);
+}
+
+.menu li {
+    padding: 15px 5px;
+    font-size: 16px;
+
+}
+
+.logo a {
+    color: #42a5f5;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.logo a:hover {
+    transition: all .3s ease-in-out;
+    color: rgb(87, 73, 28);
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.toggle {
+    cursor: pointer;
+    order: 1;
+
+}
+
+.item {
+    width: 100%;
+
+    text-align: center;
+    order: 2;
+    display: none;
+    transition: all .5s ease-in-out;
+}
+
+.item.open {
+
+    display: block;
+}
+
+
+.bars {
+    display: inline-block;
+    background: black;
+    height: 1px;
+    width: 16px;
+    position: relative;
+
+}
+
+.menu-icon-container {
+    width: 40px;
+    height: 20px;
+    transition: all .5s ease-in-out;
+    position: relative;
+}
+
+.menu-icon {
+
+    width: 40px;
+    height: 1px;
+    background: rgb(87, 73, 28);
+    transition: all .5s ease-in-out;
+    position: absolute;
+
+}
+
+.top {
+    top: 10px;
+
+
+}
+
+.bottom {
+    top: 20px;
+}
+
+.top.open {
+    transform: scale(0) translateY(0px);
+    background: transparent;
+}
+
+.center.open {
+    transform: rotate(90deg) translate(10px, 0px);
+}
+
+.bottom.open {
+    transform: rotate(-180deg) translate(0px, 10px);
+}
+
+
+
+
+
+@media only screen and (min-width: 1200px) {
+    .item {
+        display: block;
+        width: auto;
+        order: 1;
+    }
+
+    .toggle {
+        display: none;
+    }
+
+    .logo {
+        order: 0;
+    }
+
+    .button {
+        order: 2;
+        padding-right: 0;
+    }
+
+    .menu li {
+        padding: 15px 10px;
+    }
+
+    .logo {
+        flex: 1;
+    }
+
+    .menu {
+        justify-content: center;
+    }
+
+}
