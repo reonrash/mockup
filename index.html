@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="pace.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-bez@1.0.11/src/jquery.bez.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="https://kit.fontawesome.com/74ce893bbd.js" crossorigin="anonymous" SameSite="secure"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+
+
+
+
+
+
+</head>
+
+<body>
+    <div id="preloader">
+        <div class="p">DREAMS TO REALITY<br>LOADING</div>
+    </div>
+    <script>
+        paceOptions = {
+            ajax: true,
+            document: true,
+            eventLag: false
+        };
+
+        Pace.on('done', function () {
+            $('.p').delay(500).animate({
+                top: '30%',
+                opacity: '0'
+            }, 3000, $.bez([0.19, 1, 0.22, 1]));
+
+
+            $('#preloader').delay(1500).animate({
+                top: '-100%'
+            }, 2000, $.bez([0.19, 1, 0.22, 1]));
+
+            TweenMax.from(".bodycon", 3, {
+                delay: 1.8,
+                y: 10,
+                autoAlpha: 0,
+                ease: Expo.easeInOut
+            })
+        });
+    </script>
+    <div class="bodycon">
+        <nav>
+            <ul class="menu">
+                <li class="logo"><a href="#">Dreams <br>To Reality</a></li>
+                <li class="item"><a href="#">About Us</a></li>
+                <li class="item"><a href="#">Our Work</a></li>
+                <li class="item"><a href="#">Our Team</a></li>
+                <li class="item button"><a href="#">Donate</a></li>
+                <li class="item"><a href="#">Contact</a></li>
+                <li class="toggle">
+                    <a href="#">
+                        <div class="menu-icon-container">
+                            <span class="menu-icon top"></span>
+                            <span class="menu-icon center"></span>
+                            <span class="menu-icon bottom"></span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="home">
+            <div class="introimg bust-out">
+                <img src="helping2.jpg" alt="happy">
+            </div>
+            <div class="homeContainer">
+                <h6 class="title">Dreams To Reality is a <nobr>Non-Profit</nobr>
+                </h6>
+                <h1 class="quote">Helping Bridge Tomorrow With Today</h1>
+                <p class="introduction">
+                    We are working in local communities to help elevate real people with real problems. We take a
+                    holistic
+                    approach to make sure no person gets left behind
+                </p>
+                <a class="cta " href="#">Learn More</a>
+
+            </div>
+
+
+        </div>
+        <div class="about">
+            <div class="abouttitle">
+                <h1>About Us</h1>
+            </div>
+            <div class="aboutimg">
+                <img src="hands2.png" alt="happy">
+            </div>
+            <h3>
+                A Future Where People and Nature Thrive
+            </h3>
+            <p class="description">
+                The planet is at a crossroads. The actions we take together right now are important to protecting the
+                natural world we rely on today—and for setting us on the path to a more hopeful, sustainable future. The
+                Nature Conservancy is taking on the planet’s biggest, most important challenges by focusing on
+                priorities
+                that science shows are the most urgent and where our innovation and expertise can be game changers.
+            </p>
+        </div>
+
+        <div class="work">
+            <div class="worktitle">
+                <h1 class="">Our Work</h1>
+                <p>How we are tackling complex issues</p>
+            </div>
+            <div class="workimg">
+                <img src="houses.jpg" alt="happy">
+            </div>
+            <p class="description">
+                The planet is at a crossroads. The actions we take together right now are important to protecting the
+                natural world we rely on today—and for setting us on the path to a more hopeful, sustainable future. The
+                Nature Conservancy is taking on the planet’s biggest, most important challenges by focusing on
+                priorities
+                that science shows are the most urgent and where our innovation and expertise can be game changers.
+            </p>
+            <h3 class="stat">
+                Statistics
+            </h3>
+            <div class="statcard">
+                <div class="staticon">
+                    <i class="fas fa-home"></i>
+
+                </div>
+                <h3 class="statnum">50 Families</h3>
+                <p class="statdes">helped raised out of poverty</p>
+            </div>
+
+            <div class="statcard">
+                <div class="staticon">
+                    <i class="fas fa-scroll"></i>
+
+                </div>
+                <h3 class="statnum">12 GEDS</h3>
+                <p class="statdes">Received through academic preparation</p>
+            </div>
+            <div class="statcard">
+                <div class="staticon">
+                    <i class="fas fa-car"></i>
+
+
+
+                </div>
+                <h3 class="statnum">32 Cars</h3>
+                <p class="statdes">Given to at risk individuals</p>
+            </div>
+        </div>
+
+        <div class="team">
+            <div class="teamtitle">
+                <h1>Our Team</h1>
+            </div>
+            <p class="description">
+                The planet is at a crossroads. The actions we take together right now are important to protecting the
+                natural world we rely on today—and for setting us on the path to a more hopeful, sustainable future.
+            </p>
+            <div class="cardcontainer">
+                <div class="card">
+                    <div class="cardimage zero"></div>
+                    <div class="text">
+                        <h1 class="name">
+                            Dylan Rogers
+                        </h1>
+                        <h3 class="position">
+                            Secretary
+                        </h3>
+                        <p class="aboutme">
+                            DeVry University Bachelor of Science: Technical Management with a minor in Operations
+                            Management
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="card space">
+                    <div class="cardimage one"></div>
+                    <div class="text">
+                        <h1 class="name">
+                            Tracy Morgan
+                        </h1>
+                        <h3 class="position">
+                            Treasurer
+                        </h3>
+                        <p class="aboutme">
+                            DeVry University Bachelor of Science: Technical Management with a minor in Operations
+                            Management
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card space">
+                    <div class="cardimage two"></div>
+                    <div class="text">
+                        <h1 class="name">
+                            Mike Williams
+                        </h1>
+                        <h3 class="position">
+                            Investor
+                        </h3>
+                        <p class="aboutme">
+                            DeVry University Bachelor of Science: Technical Management with a minor in Operations
+                            Management
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="contact">
+            <div class="contacttitle">
+                <h1 class="">Get In Touch</h1>
+                <p class="description">
+                    The planet is at a crossroads.
+                </p>
+            </div>
+            <div class="contactinfo">
+                <div class="contactpor email">
+                    <div class="emailicon"><i class="far fa-envelope"></i></div>
+                    <h3>Email</h3>
+                    <p>Dreamstoreality @ gmail.com</p>
+                </div>
+                <div class=" contactpor phone">
+                    <div class="phoneicon"><i class="fas fa-phone"></i></div>
+                    <h3>Phone</h3>
+                    <p>(946)-546-984</p>
+                </div>
+                <div class="contactpor address">
+                    <div class="addressicon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h3>Address</h3>
+                    <p>411 New Avenue Lanes Durham, NC 27713</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer"></div>
+
+
+        <script type="text/javascript" src="script.js"></script>
+    </div>
+
+
+</body>
+
+
+</html>
